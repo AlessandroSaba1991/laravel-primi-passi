@@ -80,7 +80,8 @@
         .card-body {
             padding: 1rem;
         }
-        .card-body span{
+
+        .card-body span {
             color: red;
             font-size: 20px;
         }
@@ -97,9 +98,9 @@
 <body>
     <header>
         <nav class="nav">
-            <a href="/">Home</a>
-            <a href="/second">2nd Page</a>
-            <a href="/third">3nd Page</a>
+            <a href="{{route('home')}}">Home</a>
+            <a href="{{route('2')}}">2nd Page</a>
+            <a href="{{route('3')}}">3nd Page</a>
         </nav>
     </header>
     <main>
@@ -114,7 +115,7 @@
                 <div class="col-3">
                     <div class="card">
                         <div class="card-body">
-                            <h3> <span>Nome:</span>  {{$course['title']}}</h3>
+                            <h3> <span>Nome:</span> {{$course['title']}}</h3>
                             <p><span>€</span> {{$course['price']}}</p>
                             <small><span>Description:</span> {{$course['text']}}</small>
                         </div>

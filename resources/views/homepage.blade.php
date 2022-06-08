@@ -79,9 +79,9 @@
 <body>
     <header>
         <nav class="nav">
-          <a href="/">Home</a>
-          <a href="/second">2nd Page</a>
-          <a href="/third">3nd Page</a>
+          <a href="{{route('home')}}">Home</a>
+          <a href="{{route('2')}}">2nd Page</a>
+          <a href="{{route('3')}}">3nd Page</a>
         </nav>
     </header>
     <main>

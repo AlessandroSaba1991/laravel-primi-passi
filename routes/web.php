@@ -52,7 +52,7 @@ Route::get('/', function () {
         ],
     ];
     return view('homepage', compact("users"));
-});
+})->name('home');
 
 Route::get('/second', function () {
     $courses = [
@@ -93,7 +93,7 @@ Route::get('/second', function () {
         ],
     ];
     return view('second', compact('courses'));
-});
+})->name('2');
 
 Route::get('/third', function () {
     $courses = [
@@ -141,4 +141,4 @@ Route::get('/third', function () {
         ],
     ];
     return view('third',compact("courses"));
-});
+})->name('3');
