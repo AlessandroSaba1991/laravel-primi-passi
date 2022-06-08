@@ -79,26 +79,26 @@
 <body>
     <header>
         <nav class="nav">
-          <a href="/">Home</a>
+        <a href="/">Home</a>
           <a href="/second">2nd Page</a>
           <a href="/third">3nd Page</a>
         </nav>
     </header>
     <main>
         <div class="jumbotron">
-            <h1>HOMEPAGE</h1>
-            <p>Benvenuto nella homepage</p>
-            <p>Qui sotto coloro che hanno collaborato al sito</p>
+            <h1>2ND PAGE</h1>
+            <p>Benvenuto nella seconda pagina</p>
+            <p>Qui sotto offriamo alcuni corsi</p>
         </div>
         <div class="container">
             <div class="row">
-                @foreach($users as $user)
+                @foreach($courses as $course)
                 <div class="col-3">
                     <div class="card">
-                        <img src="{{$user['img']}}" alt="{{$user['surname']}}">
+                        <img src="{{$course['img']}}" alt="{{$course['title']}}">
                         <div class="card-body">
-                            <h3>{{$user['surname']}}</h3>
-                            <p>{{$user['name']}}</p>
+                            <h3>{{$course['title']}}</h3>
+                            <p>€ {{$course['price']}}</p>
                         </div>
                     </div>
                 </div>
